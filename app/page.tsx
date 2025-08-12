@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
-import BenefitsSection from "@/components/benefits-section"
-import ServicesSection from "@/components/services-section" // Added new services section import
+import ServicesSection from "@/components/services-section"
+import WhyChooseUs from "@/components/why-choose-us" // Added new minimalist why choose us section
 import TestimonialsSection from "@/components/testimonials-section"
 import ClientLogos from "@/components/client-logos"
 import ContactForm from "@/components/contact-form"
@@ -12,8 +12,8 @@ export default function HomePage() {
     <main className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <BenefitsSection />
-      <ServicesSection /> {/* Added services section between benefits and testimonials */}
+      <ServicesSection />
+      <WhyChooseUs /> {/* Added new section with 3 key benefits: rapidez, seguridad, soporte */}
       <TestimonialsSection />
       <ClientLogos />
       <ContactForm />

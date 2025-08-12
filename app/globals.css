@@ -2,79 +2,80 @@
 @import "tw-animate-css";
 
 :root {
-  --background: oklch(0.99 0.005 120);
-  --foreground: oklch(0.15 0.02 120);
+  --background: oklch(0.99 0.005 240);
+  --foreground: oklch(0.15 0.02 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 120);
+  --card-foreground: oklch(0.15 0.02 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 120);
-  /* Updated primary color to use #44aa00 green base */
-  --primary: oklch(0.65 0.18 130);
-  --primary-foreground: oklch(0.99 0.005 120);
-  --secondary: oklch(0.96 0.01 120);
-  --secondary-foreground: oklch(0.25 0.03 120);
-  --muted: oklch(0.96 0.01 120);
-  --muted-foreground: oklch(0.55 0.02 120);
-  /* Added complementary accent color (blue-gray) */
-  --accent: oklch(0.94 0.02 200);
-  --accent-foreground: oklch(0.25 0.03 120);
+  --popover-foreground: oklch(0.15 0.02 240);
+  /* Updated primary color to match logo blue (#3b82f6) */
+  --primary: oklch(0.65 0.18 250);
+  --primary-foreground: oklch(0.99 0.005 240);
+  --secondary: oklch(0.96 0.01 240);
+  --secondary-foreground: oklch(0.25 0.03 240);
+  --muted: oklch(0.96 0.01 240);
+  --muted-foreground: oklch(0.55 0.02 240);
+  /* Updated accent color to match logo cyan (#0891b2) */
+  --accent: oklch(0.6 0.15 200);
+  --accent-foreground: oklch(0.99 0.005 240);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.99 0.005 120);
-  --border: oklch(0.92 0.01 120);
-  --input: oklch(0.92 0.01 120);
-  --ring: oklch(0.65 0.18 130);
-  /* Updated chart colors to complement green theme */
-  --chart-1: oklch(0.65 0.18 130);
+  --destructive-foreground: oklch(0.99 0.005 240);
+  --border: oklch(0.92 0.01 240);
+  --input: oklch(0.92 0.01 240);
+  --ring: oklch(0.65 0.18 250);
+  /* Updated chart colors to match logo palette */
+  --chart-1: oklch(0.65 0.18 250);
   --chart-2: oklch(0.6 0.15 200);
-  --chart-3: oklch(0.7 0.12 160);
-  --chart-4: oklch(0.55 0.2 110);
-  --chart-5: oklch(0.75 0.1 180);
+  --chart-3: oklch(0.45 0.12 260);
+  --chart-4: oklch(0.55 0.1 220);
+  --chart-5: oklch(0.7 0.08 180);
   --radius: 0.625rem;
-  --sidebar: oklch(0.98 0.005 120);
-  --sidebar-foreground: oklch(0.15 0.02 120);
-  --sidebar-primary: oklch(0.65 0.18 130);
-  --sidebar-primary-foreground: oklch(0.99 0.005 120);
-  --sidebar-accent: oklch(0.96 0.01 120);
-  --sidebar-accent-foreground: oklch(0.25 0.03 120);
-  --sidebar-border: oklch(0.92 0.01 120);
-  --sidebar-ring: oklch(0.65 0.18 130);
+  --sidebar: oklch(0.98 0.005 240);
+  --sidebar-foreground: oklch(0.15 0.02 240);
+  --sidebar-primary: oklch(0.65 0.18 250);
+  --sidebar-primary-foreground: oklch(0.99 0.005 240);
+  --sidebar-accent: oklch(0.96 0.01 240);
+  --sidebar-accent-foreground: oklch(0.25 0.03 240);
+  --sidebar-border: oklch(0.92 0.01 240);
+  --sidebar-ring: oklch(0.65 0.18 250);
 }
 
 .dark {
-  --background: oklch(0.12 0.02 120);
-  --foreground: oklch(0.95 0.01 120);
-  --card: oklch(0.15 0.02 120);
-  --card-foreground: oklch(0.95 0.01 120);
-  --popover: oklch(0.15 0.02 120);
-  --popover-foreground: oklch(0.95 0.01 120);
-  /* Updated dark mode primary to lighter green */
-  --primary: oklch(0.75 0.16 130);
-  --primary-foreground: oklch(0.12 0.02 120);
-  --secondary: oklch(0.22 0.03 120);
-  --secondary-foreground: oklch(0.95 0.01 120);
-  --muted: oklch(0.22 0.03 120);
-  --muted-foreground: oklch(0.65 0.02 120);
-  --accent: oklch(0.25 0.04 200);
-  --accent-foreground: oklch(0.95 0.01 120);
+  --background: oklch(0.12 0.02 240);
+  --foreground: oklch(0.95 0.01 240);
+  --card: oklch(0.15 0.02 240);
+  --card-foreground: oklch(0.95 0.01 240);
+  --popover: oklch(0.15 0.02 240);
+  --popover-foreground: oklch(0.95 0.01 240);
+  /* Updated dark mode primary to lighter blue */
+  --primary: oklch(0.75 0.16 250);
+  --primary-foreground: oklch(0.12 0.02 240);
+  --secondary: oklch(0.22 0.03 240);
+  --secondary-foreground: oklch(0.95 0.01 240);
+  --muted: oklch(0.22 0.03 240);
+  --muted-foreground: oklch(0.65 0.02 240);
+  /* Updated dark mode accent to lighter cyan */
+  --accent: oklch(0.7 0.12 200);
+  --accent-foreground: oklch(0.12 0.02 240);
   --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(0.95 0.01 120);
-  --border: oklch(0.22 0.03 120);
-  --input: oklch(0.22 0.03 120);
-  --ring: oklch(0.75 0.16 130);
+  --destructive-foreground: oklch(0.95 0.01 240);
+  --border: oklch(0.22 0.03 240);
+  --input: oklch(0.22 0.03 240);
+  --ring: oklch(0.75 0.16 250);
   /* Updated dark mode chart colors */
-  --chart-1: oklch(0.75 0.16 130);
+  --chart-1: oklch(0.75 0.16 250);
   --chart-2: oklch(0.7 0.12 200);
-  --chart-3: oklch(0.8 0.1 160);
-  --chart-4: oklch(0.65 0.18 110);
-  --chart-5: oklch(0.85 0.08 180);
-  --sidebar: oklch(0.18 0.02 120);
-  --sidebar-foreground: oklch(0.95 0.01 120);
-  --sidebar-primary: oklch(0.75 0.16 130);
-  --sidebar-primary-foreground: oklch(0.12 0.02 120);
-  --sidebar-accent: oklch(0.22 0.03 120);
-  --sidebar-accent-foreground: oklch(0.95 0.01 120);
-  --sidebar-border: oklch(0.22 0.03 120);
-  --sidebar-ring: oklch(0.75 0.16 130);
+  --chart-3: oklch(0.55 0.1 260);
+  --chart-4: oklch(0.65 0.08 220);
+  --chart-5: oklch(0.8 0.06 180);
+  --sidebar: oklch(0.18 0.02 240);
+  --sidebar-foreground: oklch(0.95 0.01 240);
+  --sidebar-primary: oklch(0.75 0.16 250);
+  --sidebar-primary-foreground: oklch(0.12 0.02 240);
+  --sidebar-accent: oklch(0.22 0.03 240);
+  --sidebar-accent-foreground: oklch(0.95 0.01 240);
+  --sidebar-border: oklch(0.22 0.03 240);
+  --sidebar-ring: oklch(0.75 0.16 250);
 }
 
 @theme inline {
@@ -147,26 +148,51 @@ html {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Updated gradient backgrounds to use new green theme */
+/* Updated gradient backgrounds to use new blue/cyan theme from logo */
 .gradient-bg {
-  background: linear-gradient(135deg, oklch(0.55 0.2 130) 0%, oklch(0.65 0.18 130) 100%);
+  background: linear-gradient(135deg, oklch(0.65 0.18 250) 0%, oklch(0.6 0.15 200) 100%);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, oklch(0.55 0.2 130) 0%, oklch(0.65 0.18 130) 100%);
+  background: linear-gradient(135deg, oklch(0.65 0.18 250) 0%, oklch(0.6 0.15 200) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Added new green-themed utility classes */
+/* Updated utility classes to match logo colors */
 .bg-primary-gradient {
-  background: linear-gradient(135deg, oklch(0.65 0.18 130) 0%, oklch(0.7 0.15 140) 100%);
+  background: linear-gradient(135deg, oklch(0.65 0.18 250) 0%, oklch(0.6 0.15 200) 100%);
 }
 
 .text-primary-gradient {
-  background: linear-gradient(135deg, oklch(0.55 0.2 130) 0%, oklch(0.7 0.15 140) 100%);
+  background: linear-gradient(135deg, oklch(0.65 0.18 250) 0%, oklch(0.6 0.15 200) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Added new logo-inspired utility classes */
+.bg-logo-blue {
+  background: oklch(0.65 0.18 250);
+}
+
+.bg-logo-cyan {
+  background: oklch(0.6 0.15 200);
+}
+
+.text-logo-blue {
+  color: oklch(0.65 0.18 250);
+}
+
+.text-logo-cyan {
+  color: oklch(0.6 0.15 200);
+}
+
+.border-logo-blue {
+  border-color: oklch(0.65 0.18 250);
+}
+
+.border-logo-cyan {
+  border-color: oklch(0.6 0.15 200);
 }
